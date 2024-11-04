@@ -16,7 +16,7 @@
       <!-- Div usada para agrupar a logo e o título, facilitando o estilo com flexbox -->
       <div class="logo">
         <!-- Logo do site inserida com a tag <img>, que exibe uma imagem -->
-        <img src="ingresso.png" alt="Logo do site" />
+        <img src="logo.png" alt="Logo do site" />
         <!-- Título principal do site, exibido dentro do cabeçalho -->
         <h1>IngressosFácil</h1>
       </div>
@@ -33,7 +33,7 @@
         </ul>
       </nav>
 
-      <button class="botão-header" onclick="window.location.href='index.html'">
+      <button class="botao-header" onclick="window.location.href='index.html'">
         Home
       </button>
     </header>
@@ -45,38 +45,62 @@
       </section>
       <section>
         <form id="formulario-registro">
-          <label for="nome">Nome completo:</label>
+          <!--Entrada do Nome-->
+          <label for="nome"> Nome Completo:</label>
           <input type="text" id="nome" name="nome" required />
-
-          <!--Entrada do cpf-->
-          <label for="cpf">CPF</label>
+          <!--Entrada do CPF-->
+          <label for="cpf"> CPF:</label>
           <input type="text" id="cpf" name="cpf" required />
-
-          <!--Entrada do email-->
-          <label for="email">email</label>
+          <!--Entrada do E-mail-->
+          <label for="email"> E-mail:</label>
           <input type="email" id="email" name="email" required />
-
-          <!--Entrada da senha-->
-          <label for="senha">Senha</label>
+          <!--Entrada da Senha-->
+          <label for="senha"> Senha:</label>
           <input type="password" id="senha" name="senha" required />
-
-          <!--Botão para enviaro formulario-->
+          <!--Botão de Enviar-->
           <input type="submit" value="Cadastrar" />
         </form>
       </section>
-
+      <section id="lista-usuarios">
+        <!-- Lista para Exibir os usuarios Cadastrados -->
+        <h2>Usuários Cadastrados</h2>
+        <ul id="user-list"></ul>
+      </section>
       <section>
-        <h2>Usúarios Cadastrados</h2>
+        <h2>Usuários Cadastrados - Tabela</h2>
         <table id="user-table">
-            <thead>
-             <th>Nome</th>
-             <th>CPF</th>
-             <th>E-mail</th>
-            </thead>
-            <tbody id="user-list-tabela">
-                <!--Os usuarios serão acionados aqui-->
+          <thead>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>E-mail</th>
+          </thead>
+          <tbody id="user-list-tabela">
+            <!-- Os usuários serão adicionados aqui -->
+            <tr></tr>
+          </tbody>
         </table>
       </section>
+
+      <section id="orglist">
+        <!-- Lista para Exibir os Organizadores Cadastrados -->
+        <h2>Organizadores Cadastrados</h2>
+        <ul id="orglist"></ul>
+      </section>
+      <section>
+        <h2>Organizadores Cadastrados - Tabela</h2>
+        <table id="org-table">
+          <thead>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+          </thead>
+          <tbody id="org-list-tabela">
+            <!-- Os organizadores serão adicionados aqui -->
+            <tr></tr>
+          </tbody>
+        </table>
+      </section>
+
     </main>
 
     <!-- Rodapé da página, com informações como direitos autorais -->
@@ -84,13 +108,12 @@
       <!-- Texto exibido no rodapé -->
       <p>&copy; 2024 IngressosFácil - Todos os direitos reservados</p>
     </footer>
-
     <script>
+      /* script como um arquivo 'js'*/
       function mostrarMensagem() {
-        alert("Olá! Você clicou no botão!");
+        alert("Olá! Você clicou no botão");
       }
     </script>
-
     <script src="app.js"></script>
   </body>
 </html>

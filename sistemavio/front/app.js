@@ -20,7 +20,7 @@ function createUser(event) {
 
   // requisição http para o endpoint de cadastro de usuário
 
-  fetch("http://10.89.240.105:5000/api/v1/user", {
+  fetch("http://10.89.290.3:5000/api/v1/user", {
     // realiza uma chamada HTTP para o servidor (a rota definida)
     method: "POST",
     headers: {

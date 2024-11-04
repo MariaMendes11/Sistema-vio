@@ -19,7 +19,7 @@ document
         const password = documnet.getElementById("password");
 
         //Requisição HTTP para o endpoint de cadastro de usuário
-        fetch("http://localhost:5000/api/v1/user",{
+        fetch("http://10.89.240.3:5000/api/v1/user",{
             //Realiza uma chamada http para o servidor (a rota definida)
             method: "POST",
             headers:{
