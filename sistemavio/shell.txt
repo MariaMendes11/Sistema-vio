@@ -1,7 +1,0 @@
-create table organizador (
-    id_usuario int auto_increment primary key,
-    nome varchar(100) not null,
-    email varchar(100) not null unique,
-    senha varchar(50) not null,
-    telefone char(11) not null
-);
