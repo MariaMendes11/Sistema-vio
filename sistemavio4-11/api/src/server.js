@@ -11,5 +11,5 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-//Inicia o servidor na porta 5000, tornando a API acessível em http://localhost:10.89.240.82
+//Inicia o servidor na porta 5000, tornando a API acessível em http://localhost:10.89.240.14
 app.listen(5000);
